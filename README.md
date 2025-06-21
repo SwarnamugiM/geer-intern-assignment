@@ -2,8 +2,6 @@
 
 A modern, full-stack e-commerce web application built with Next.js, featuring a luxury jewelry store with authentication, shopping cart, and product management capabilities.
 
-![LuxuryGems Store](https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=400&fit=crop&crop=center)
-
 ## 🚀 Features
 
 ### 🛍️ **E-Commerce Functionality**
@@ -72,36 +70,36 @@ Before running this project, make sure you have the following installed:
 ## 🚀 How to Run the Project
 
 ### 1. **Clone the Repository**
-\`\`\`bash
+\bash
 git clone <repository-url>
 cd luxury-jewelry-store
-\`\`\`
+\
 
 ### 2. **Install Dependencies**
-\`\`\`bash
+\bash
 npm install
 # or
 yarn install
-\`\`\`
+\
 
 ### 3. **Run Development Server**
-\`\`\`bash
+\bash
 npm run dev
 # or
 yarn dev
-\`\`\`
+\
 
 ### 4. **Open in Browser**
 Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
 ### 5. **Build for Production** (Optional)
-\`\`\`bash
+bash
 npm run build
 npm start
 # or
 yarn build
 yarn start
-\`\`\`
+
 
 ## 🔑 Demo Credentials
 
@@ -114,14 +112,10 @@ yarn start
 - Or use any email with any password for existing demo users
 
 ## 📁 Project Structure
-
-\`\`\`
 luxury-jewelry-store/
 ├── /frontend 
 ├── README.md                     # Project documentation
 └── .gitignore                    # Git ignore rules
-\`\`\`
-
 
 
 ## 🎯 Key Features Explained
@@ -215,31 +209,7 @@ Currently, no environment variables are required for development. For production
 - **Netlify** - Static site deployment with serverless functions
 - **Railway** - Full-stack deployment with database support
 - **DigitalOcean** - VPS deployment with custom configuration
-
-## 🔄 Future Enhancements
-
-### **Database Integration**
-\`\`\`
-/frontend
-├── /lib
-│   ├── /database
-│   │   ├── connection.ts         # Database connection setup
-│   │   ├── models/               # Data models
-│   │   └── migrations/           # Database migrations
-\`\`\`
-
-### **Microservices Architecture** (Future)
-\`\`\`
-/project-root
-├── /frontend                     # Next.js client application
-├── /backend                      # Separate Node.js/Express API
-│   ├── /auth-service            # Authentication microservice
-│   ├── /product-service         # Product management microservice
-│   └── /order-service           # Order processing microservice
-├── /shared                       # Shared types and utilities
-└── /database                     # Database schemas and migrations
-\`\`\`
-
+- 
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -256,6 +226,4 @@ Currently, no environment variables are required for development. For production
 - **Tailwind CSS** - For the utility-first CSS framework
 - **Unsplash** - For high-quality jewelry photography
 - **Lucide** - For beautiful icons
-- **Vercel** - For hosting and deployment platform
-
 ---

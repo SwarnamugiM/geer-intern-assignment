@@ -117,67 +117,12 @@ yarn start
 
 \`\`\`
 luxury-jewelry-store/
-├── /frontend                     # Next.js Application (Full-Stack)
-│   ├── /app                      # Next.js App Router
-│   │   ├── /api                  # Backend API Routes
-│   │   │   ├── /auth             # Authentication endpoints
-│   │   │   │   ├── login/        # POST /api/auth/login
-│   │   │   │   ├── register/     # POST /api/auth/register
-│   │   │   │   ├── logout/       # POST /api/auth/logout
-│   │   │   │   └── me/           # GET /api/auth/me
-│   │   │   └── /products         # Product CRUD endpoints
-│   │   │       ├── route.ts      # GET, POST /api/products
-│   │   │       └── /[id]         # DELETE /api/products/[id]
-│   │   ├── /cart                 # Shopping cart page
-│   │   │   └── page.tsx          # Cart management UI
-│   │   ├── /login                # Authentication pages
-│   │   │   └── page.tsx          # Login form
-│   │   ├── /register             # User registration
-│   │   │   └── page.tsx          # Registration form
-│   │   ├── /products             # Product catalog
-│   │   │   ├── page.tsx          # Product listing page
-│   │   │   └── /[id]             # Dynamic product routes
-│   │   │       └── page.tsx      # Product detail page
-│   │   ├── globals.css           # Global Tailwind styles
-│   │   ├── layout.tsx            # Root layout with providers
-│   │   └── page.tsx              # Homepage/landing page
-│   ├── /components               # Reusable React Components
-│   │   ├── auth-provider.tsx     # Authentication context provider
-│   │   ├── cart-provider.tsx     # Shopping cart context provider
-│   │   ├── navigation.tsx        # Header navigation component
-│   │   ├── product-card.tsx      # Product display card
-│   │   └── add-product-form.tsx  # Admin product creation form
-│   ├── /lib                      # Utility Functions & Data
-│   │   ├── auth.ts               # Authentication utilities & user management
-│   │   ├── cart.ts               # Cart type definitions & interfaces
-│   │   └── data.ts               # Product data & CRUD operations
-│   ├── /public                   # Static Assets
-│   │   └── /images               # Product images & assets
-│   ├── package.json              # Dependencies & scripts
-│   ├── next.config.js            # Next.js configuration
-│   ├── tailwind.config.js        # Tailwind CSS configuration
-│   └── tsconfig.json             # TypeScript configuration
+├── /frontend 
 ├── README.md                     # Project documentation
 └── .gitignore                    # Git ignore rules
 \`\`\`
 
-### **Architecture Overview**
-\`\`\`
-┌─────────────────────────────────────────────────────────────┐
-│                    FRONTEND (Next.js)                      │
-├─────────────────────────────────────────────────────────────┤
-│  Client-Side (React)           Server-Side (Node.js)       │
-│  ├── Pages & Components        ├── API Routes              │
-│  ├── Context Providers         ├── Authentication          │
-│  ├── State Management          ├── Data Management         │
-│  └── UI/UX Layer              └── Business Logic          │
-├─────────────────────────────────────────────────────────────┤
-│                    DATA LAYER                              │
-│  ├── In-Memory Storage (Products, Users, Sessions)         │
-│  ├── Local Storage (Cart Persistence)                      │
-│  └── Session Cookies (Authentication)                      │
-└─────────────────────────────────────────────────────────────┘
-\`\`\`
+
 
 ## 🎯 Key Features Explained
 
@@ -262,8 +207,8 @@ Currently, no environment variables are required for development. For production
 ## 🚀 Deployment
 
 ### **Vercel (Recommended)**
-1. Push code to GitHub repository
-2. Connect repository to Vercel
+1. Push code to the GitHub repository
+2. Connect repository to Vercel/ Any website you want to deploy.
 3. Deploy automatically with zero configuration
 
 ### **Other Platforms**
@@ -303,9 +248,7 @@ Currently, no environment variables are required for development. For production
 4. Push to the branch (\`git push origin feature/amazing-feature\`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
@@ -316,5 +259,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Vercel** - For hosting and deployment platform
 
 ---
-
-**Built with ❤️ using Next.js and TypeScript**
